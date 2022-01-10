@@ -24,22 +24,22 @@
         </dependency>
     </dependencies>
 
-    <reporting>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jxr-plugin</artifactId>
-                <version>LATEST</version>
-            </plugin>
-        </plugins>
-    </reporting>
+    <!--    <reporting>-->
+    <!--        <plugins>-->
+    <!--            <plugin>-->
+    <!--                <groupId>org.apache.maven.plugins</groupId>-->
+    <!--                <artifactId>maven-jxr-plugin</artifactId>-->
+    <!--                <version>LATEST</version>-->
+    <!--            </plugin>-->
+    <!--        </plugins>-->
+    <!--    </reporting>-->
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.7.4.201502262128</version>
+                <version>0.8.4</version>
                 <executions>
                     <execution>
                         <goals>
@@ -55,6 +55,7 @@
                     </execution>
                 </executions>
             </plugin>
+
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -95,7 +96,7 @@
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.5</version>
                 <configuration>
-                    <linkXref>true</linkXref>
+                    <!--                    <linkXref>true</linkXref>-->
                     <sourceEncoding>UTF8</sourceEncoding>
                     <minimumTokens>30</minimumTokens>
                     <targetJdk>1.8</targetJdk>
